@@ -24,7 +24,7 @@ GIT:
 Git commands -
 git init
 git add .
-git commit -m ""
+git commit -m "version 1.0.0"
 git remote add origin https://github.com/Ghost200805/Learning-Repo.git
 git push -u origin master
 git clone https://github.com/Ghost200805/Learning-Repo.git
