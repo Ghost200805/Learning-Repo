@@ -1,0 +1,27 @@
+In binary if we want to represent a negative integer, we can simply consider or make an assumption that the most significant bit (MSB) is negative.
+Ex- 
+Binary : 1001
+MSB will be 1 (it is first bit)
+LSB will be 1 (It is last bit)
+
+So 2^3 is negative + 2^0 is positive , rest are too positive but they are 0 so nevermind...
+
+ASCII values A=65...Z=90, a=91...z=122 
+
+We can keep 1 as True or False and 0 as vice versa, it all depends on user.... Generally 1 is true and 0 is false...
+
+\n mean new line saying expicitely and if we use ''' it mean we are saying the pc that just print as it is written in here , like if i use multiple lines than exactly like that .... 
+
+% = reminder
+// = floor division like 11/5 = 2
+
+Learn about Dry run which mean , in a code how things are working exactly in deep not high level
+
+
+
+
+GIT:
+Git commands -
+git init
+git add .
+git commit -m ""
