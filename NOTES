@@ -28,3 +28,10 @@ git commit -m "version 1.0.0"
 git remote add origin https://github.com/Ghost200805/Learning-Repo.git
 git push -u origin master
 git clone https://github.com/Ghost200805/Learning-Repo.git
+git config --global --list
+git switch -c ABC           # Way to create branch in git and ABC is name , keep whatever 
+git checkout -b ABC         # Way to create branch if doesnt exist and if exist , we get in that branch
+git branch ABC              # Way to create new branch
+git branch -a               # Way to check all branches and there names
+git switch login            # To switch in branches
+git push --all              # To push all branches
