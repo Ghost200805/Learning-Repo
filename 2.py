@@ -101,7 +101,7 @@ elif a==0:
 else:
     print("Number is negative")
 
-"""
+
 
 
 a = int(input("Enter your number a : "))
@@ -122,3 +122,104 @@ elif c==b and c>a:
     print("c and b are greatest : ",c)
 elif a==c and a>b:
     print("a and c are greatest : ",a)
+
+
+
+
+
+a = int(input("Enter year : "))
+if a%4==0:
+    print("Leap year")
+else:
+    print("Not leap year")
+
+
+
+a = float(input("Enter your number a : "))
+b = float(input("Enter your number b : "))
+c = input("Enter what operation u want to do : ")
+
+match c:
+    case "+":
+        print(a+b)
+    case "*":
+        print(a*b)
+    case "-":
+        print(a-b)
+    case "/":
+        if b==0:
+            print("Invalid")
+        else:
+            print(a/b)
+    case "//":
+        if b==0:
+            print("Invalid")
+        else:
+            print(a//b)
+    case "%":
+        print(a%b)
+    case "**":
+        print(a**b)
+    case _:
+        print("Invalid operater")
+
+"""
+
+# TRAFFIC LIGHTS
+
+a=str(input("Enter valid color : "))
+if a.upper()=="RED":
+    print("Stop")
+elif a.upper()=="YELLOW":
+    print("Get Ready")
+elif a.upper()=="GREEN":
+    print("Go")
+else:
+    print("Invalid Input")
+
+
+# ATM SYSTEM
+b = 10000
+z = 1
+while (z==1):
+    print("To check the balance type 1 \nTo deposit type 2 \nTo Withdraw type 3 \nTo exit type 4")
+    a = int(input("Enter your choice : "))
+
+    if a==4:
+        z-=1
+
+    elif a==1:
+        print("Bank balance : ",b)
+    elif a==2:
+        c = int(input("Enter amount to be deposited : "))
+        b+=c
+        print("Your amount is deposited successfully!!")
+    elif a==3:
+        d = int(input("Enter the amount to be withdrawn : "))
+        if d>b:
+            print("Insufficient Balance!")
+        else:
+            b-=d
+            print("Amount withdrawn Successfully!!")
+    else:
+        print("Invalid Input. Please try again")
+
+
+
+# ROCK PAPER SCISSORS
+
+a = str(input("Enter your choice (Rock or Paper or Scissors) for User A : "))
+b = str(input("Enter your choice (Rock or Paper or Scissors) for User B : "))
+
+if a.upper()=="ROCK" and b.upper()=="SCISSORS":
+    print("User A WINS.")
+if a.upper()=="SCISSORS" and b.upper()=="ROCK":
+    print("User B WINS.")
+if a.upper()=="ROCK" and b.upper()=="PAPER":
+    print("User B WINS.")
+if a.upper()=="PAPER" and b.upper()=="ROCK":
+    print("User A WINS.")
+if a.upper()=="PAPER" and b.upper()=="SCISSORS":
+    print("User B WINS.")
+if a.upper()=="SCISSORS" and b.upper()=="PAPER":
+    print("User A WINS.")
