@@ -1,0 +1,26 @@
+.get {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+.get:hover {
+    background-color: rgb(100, 65, 150);
+    color: white;
+}
+.download {
+    background-color: rgb(108, 117, 125);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+.download:hover {
+    background-color: rgb(90, 98, 104);
+    color: white;
+}
