@@ -1,0 +1,30 @@
+.email{
+    padding: 12px;
+    width: 393px;
+    margin-bottom: 20px;
+}
+
+.sign{
+    background-color: rgb(47, 127, 231);
+    color: white;
+    border: none;
+    width: 390px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.flex{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="text"]{
+    border-radius: 8px;
+    padding: 8px 14px;
+    border: none;
+    border: solid 1px gray;
+}
