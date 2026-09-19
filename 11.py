@@ -45,9 +45,9 @@ for i in range(5):
 print("\n")
 
 
-x = 20
-for i in range(5,0,-1):
-    for j in range(i+1):
+x = 21
+for i in range(6,0,-1):
+    for j in range(i):
         print(x, end=" ")
         x=x-1
     print()
