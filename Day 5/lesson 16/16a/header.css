@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fff;
+}
+
+.header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.hamburger-menu {
+    font-size: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.youtube-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 22px;
+    margin-right: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.youtube-text {
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 650px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.search-bar {
+    height: 40px;
+    flex: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #1a73e8;
+}
+
+.search-button {
+    height: 40px;
+    width: 64px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    border-radius: 0 20px 20px 0;
+}
+
+.search-button:hover {
+    background-color: #f0f0f0;
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 17px;
+}
+
+.voice-search-button:hover {
+    background-color: #e5e5e5;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+    font-size: 22px;
+}
+
+.current-user-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+    font-family: Roboto, Arial, sans-serif;
+    position: absolute;
+    background-color: #606060;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 200;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
+.notifications-icon-container {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    background-color: #cc0000;
+    color: white;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    column-gap: 15px;
+    row-gap: 30px;
+    padding: 20px;
+}
+
+.video-preview {
+    width: 300px;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 300px;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.video-title {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.video-author {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.video-stats {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 0;
+}
