@@ -93,3 +93,41 @@ INSERT INTO Employee2 VALUES ( 2 , "Jim", "Carrie", 23 , "East", 5100);
 CREATE TABLE Employee3(EmpID INT NOT NULL UNIQUE, FirstName VARCHAR(10) , LastName VARCHAR(10), EmpAge int , Empzone varchar(10) );
 ALTER TABLE Employee3 ADD COLUMN EmpSalary INT;
 ALTER TABLE Employee3 ADD CONSTRAINT chk_EmpAge_Salary CHECK(EmpAge >22 and EmpSalary > 5000);
+
+
+create  table employee7(
+empid int primary key,
+firstname varchar(10),
+lastname varchar(10),
+empage int,
+salary int);
+desc employee7;
+-- multiple column
+alter table employee7 add constraint chk_empage_salary check (empage>20 and salary>=5000);
+desc employees;
+-- single column only 
+alter table employees add constraint check(empage>20) ;
+alter table employees add constraint chk_empage_sal check(empage>20 and empid>=1000) ;
+alter table employee7 drop check chk_empage_salary;
+show create table employee7;
+show create table employees;
+
+desc employee7;
+alter table employee7 add constraint check(salary>=5000);
+
+show tables;
+select * from employees;
+
+insert into employees(empid,firstname) values(10001,"Govind");
+insert into employees(empid,firstname) values(10002,"Soni");
+insert into employees(empid,firstname) values(10003,"Ram");
+insert into employees(empid,firstname) values(10004,"Shyam");
+insert into employees(empid,firstname) values(10005,"Sita");
+
+-- delete from employees where empid=10001;
+desc employees;
+create index demoindex on employees(firstname);
+create index deomoindex2 on employees(firstname,lastname);
+show indexes from employees;
+
+drop index demoindex on employees;
