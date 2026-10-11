@@ -134,7 +134,7 @@ list1.append(node(30))
 list1.append(node(40))
 list1.append(node(50))
 
-print("Original list:")
+print("Original list using Traversal : ")
 list1.print()
 
 print("\nAfter inserting 400 at position 2:")
