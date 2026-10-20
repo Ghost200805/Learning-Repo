@@ -48,3 +48,16 @@ select concat(custname," ",lastname) as Fullname from customer;
 select substr(custname,1,3) from customer;
 
 select instr(custname,"a") from customer;
+
+select * from customer;
+select substr(custname,1,3), instr(custname,'a') from customer;
+
+select now() as curr_time;
+
+alter table customer add column date date;
+
+update customer set date='2024/2/20' where custid = 1;
+update customer set date='2024-8-24' where custid = 2;
+update customer set date='2024-10-21' where custid = 3; 
+
+alter table customer drop column date;
