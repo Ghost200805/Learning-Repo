@@ -41,3 +41,19 @@ select * from employee where last_name like "S%";
 select * from employee order by experience limit 5;
 
 select * from employee where experience is null;
+
+select count(empid) from employee where dept = "Finance";
+select min(empid) from employee;
+select max(empid) from employee;
+select sum(experience) from employee;
+select count(*) from employee;
+select count(empid) from employee where role = "Developer";
+select avg(experience) from employee;
+
+select dept,count(*) from employee group by dept;
+select role,count(*) from employee group by role;
+
+select dept,count(*) from employee group by dept having dept = "IT";
+select dept,sum(experience) from employee group by dept having sum(experience)>=1 and sum(experience)<=5 and dept = "IT";
+select * from employee;
+
