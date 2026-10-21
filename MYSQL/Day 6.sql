@@ -57,3 +57,5 @@ select dept,count(*) from employee group by dept having dept = "IT";
 select dept,sum(experience) from employee group by dept having sum(experience)>=1 and sum(experience)<=5 and dept = "IT";
 select * from employee;
 
+select dept,count(empid) from employee group by dept having count(empid)>2 order by count(empid) desc;
+
