@@ -29,3 +29,11 @@ select e.employee_id,e.ename,p.pname from employees e left join projects p on e.
 
 select e.employee_id,e.ename,p.pname from projects p left join employees e on e.employee_id=p.employee_id;
 
+select e.employee_id,e.ename,p.pname from employees e right join projects p on e.employee_id=p.employee_id;
+
+select e.employee_id,e.ename,p.pname from projects p right join employees e on e.employee_id=p.employee_id;
+
+select * from employees e left join projects p on e.employee_id = p.employee_id union select * from employees e right join projects p on e.employee_id = p.employee_id;
+
+select * from employees e left join projects p on e.employee_id = p.employee_id and p.pname is Null;
+
