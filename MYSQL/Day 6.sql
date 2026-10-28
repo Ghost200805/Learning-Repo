@@ -58,4 +58,4 @@ select dept,sum(experience) from employee group by dept having sum(experience)>=
 select * from employee;
 
 select dept,count(empid) from employee group by dept having count(empid)>2 order by count(empid) desc;
-
+select dept,count(empid) from employee group by dept having count(empid)>2 order by count(empid) desc;

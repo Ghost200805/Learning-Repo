@@ -126,7 +126,7 @@ insert into employees(empid,firstname) values(10005,"Sita");
 
 -- delete from employees where empid=10001;
 desc employees;
-create index demoindex on employees(firstname);
+create index demoindex on employees(firstname desc);
 create index deomoindex2 on employees(firstname,lastname);
 show indexes from employees;
 
