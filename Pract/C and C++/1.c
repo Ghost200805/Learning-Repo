@@ -8,7 +8,7 @@ int main() {
   
   // Print variables
   printf("%d\n", myNum);
-  printf("%f\n", myFloatNum);
+  printf("%.2f\n", myFloatNum); // %f normally but %.2f mean- till 2 decimal places...
   printf("%c\n", myLetter);
   return 0;
 }
