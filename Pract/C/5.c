@@ -18,4 +18,5 @@ int main(){
     printf("size of char c %zu\n", sizeof(c));
     printf("size of double d %zu\n", sizeof(d));
     printf("size of char f[10] %zu\n", sizeof(f));
+    return 0;
 }
