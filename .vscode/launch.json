@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Shamit/Desktop/IMCC/Pract/C and C++",
-      "program": "c:/Users/Shamit/Desktop/IMCC/Pract/C and C++/build/Debug/outDebug",
+      "cwd": "c:/Users/Shamit/Desktop/IMCC",
+      "program": "c:/Users/Shamit/Desktop/IMCC/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
