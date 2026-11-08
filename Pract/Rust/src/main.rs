@@ -7,6 +7,13 @@ use crate::a6::a6;
 use crate::a7::a7;
 use crate::a8::a8;
 use crate::a9::a9;
+use crate::a10::a10;
+use crate::a11::a11;
+use crate::a12::a12;
+use crate::a13::a13;
+use crate::a14::a14;
+use crate::a15::a15;
+use crate::a16::a16;
 mod a2;
 mod a1;
 mod a3;
@@ -16,6 +23,13 @@ mod a6;
 mod a7;
 mod a8;
 mod a9;
+mod a10;
+mod a11;
+mod a12;
+mod a13;
+mod a14;
+mod a15;
+mod a16;
 
 fn main() { // u always need to start function in rust
     println!("Hello World!");
@@ -50,6 +64,26 @@ fn main() { // u always need to start function in rust
     a9();
     println!("");
     println!("a10 file content ---------------------");
+    a10();
+    println!("");
+    println!("a11 file content ---------------------");
+    a11();
+    println!("");
+    println!("a12 file content ---------------------");
+    a12();
+    println!("");
+    println!("a13 file content ---------------------");
+    a13();
+    println!("");
+    println!("a14 file content ---------------------");
+    a14();
+    println!("");
+    println!("a15 file content ---------------------");
+    a15();
+    println!("");
+    println!("a16 file content ---------------------");
+    a16();
+    println!("");
     
 
 }
