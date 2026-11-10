@@ -1,0 +1,80 @@
+.MODEL SMALL
+.STACK 100H
+
+.DATA
+    NL DB 13,10,'$'
+
+.CODE
+START PROC
+    MOV AX, @DATA
+    MOV DS, AX
+
+    MOV SI, 2
+    MOV DI, 1
+
+L1:
+    MOV AX, SI
+    CALL PRINT_NUM
+
+    MOV DL, 'x'
+    MOV AH, 02H
+    INT 21H
+
+    MOV AX, DI
+    CALL PRINT_NUM
+
+    MOV DL, '='
+    MOV AH, 02H
+    INT 21H
+
+    MOV AX, SI
+    MUL DI
+
+    CALL PRINT_NUM
+
+    LEA DX, NL
+    MOV AH, 09H
+    INT 21H
+
+    INC DI
+    CMP DI, 11
+    JL L1
+
+    MOV AH, 4CH
+    INT 21H
+
+START ENDP
+
+PRINT_NUM PROC
+    PUSH AX
+    PUSH BX
+    PUSH CX
+    PUSH DX
+
+    XOR CX, CX
+    MOV BX, 10
+
+L2:
+    XOR DX, DX
+    DIV BX
+    PUSH DX
+    INC CX
+    CMP AX, 0
+    JNE L2
+
+L3:
+    POP DX
+    ADD DL, 30H
+    MOV AH, 02H
+    INT 21H
+    LOOP L3
+
+    POP DX
+    POP CX
+    POP BX
+    POP AX
+
+    RET
+PRINT_NUM ENDP
+
+END START

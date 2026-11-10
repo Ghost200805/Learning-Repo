@@ -1,0 +1,4 @@
+{
+    "masmtasm.ASM.assembler": "TASM",
+    "masmtasm.ASM.emulator": "jsdos-x"
+}
