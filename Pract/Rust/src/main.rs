@@ -15,6 +15,7 @@ use crate::a14::a14;
 use crate::a15::a15;
 use crate::a16::a16;
 use crate::a17::a17;
+use crate::a18::a18;
 mod a2;
 mod a1;
 mod a3;
@@ -32,6 +33,7 @@ mod a14;
 mod a15;
 mod a16;
 mod a17;
+mod a18;
 
 fn main() { // u always need to start function in rust
     println!("Hello World!");
@@ -94,10 +96,13 @@ fn main() { // u always need to start function in rust
 
     let sum = add(3, 4);
     println!("Sum is: {}", sum);
-
+    
+    println!("");
     println!("a17 file content ---------------------");
-
     a17();
+    println!("");
+    println!("a18 file content ---------------------");
+    a18();
     println!("");
 }
 
