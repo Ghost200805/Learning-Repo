@@ -16,6 +16,7 @@ use crate::a15::a15;
 use crate::a16::a16;
 use crate::a17::a17;
 use crate::a18::a18;
+use crate::a19::a19;
 mod a2;
 mod a1;
 mod a3;
@@ -34,6 +35,7 @@ mod a15;
 mod a16;
 mod a17;
 mod a18;
+mod a19;
 
 fn main() { // u always need to start function in rust
     println!("Hello World!");
@@ -104,6 +106,10 @@ fn main() { // u always need to start function in rust
     println!("a18 file content ---------------------");
     a18();
     println!("");
+    println!("a19 file content ---------------------");
+    a19();
+    println!("");
+    
 }
 
 /*
