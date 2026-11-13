@@ -18,6 +18,11 @@ use crate::a17::a17;
 use crate::a18::a18;
 use crate::a19::a19;
 use crate::a20::a20;
+use crate::a21::a21;
+use crate::a22::a22;
+use crate::a23::a23;
+use crate::a24::a24;
+use crate::a25::a25;
 mod a2;
 mod a1;
 mod a3;
@@ -38,6 +43,11 @@ mod a17;
 mod a18;
 mod a19;
 mod a20;
+mod a21;
+mod a22;
+mod a23;
+mod a24;
+mod a25;
 
 fn main() { // u always need to start function in rust
     println!("Hello World!");
@@ -94,6 +104,16 @@ fn main() { // u always need to start function in rust
     a19();
     println!("\na20 file content (DSA) ---------------\n");
     a20();
+    println!("\na21 file content ---------------------\n");
+    a21();
+    println!("\na22 file content ---------------------\n");
+    a22();
+    println!("\na23 file content ---------------------\n");
+    a23();
+    println!("\na24 file content ---------------------\n");
+    a24();
+    println!("\na25 file content ---------------------\n");
+    a25();
 
 
 }
