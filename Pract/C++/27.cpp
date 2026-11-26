@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+// defining custom structures as per our wish
+
 int main() {
     struct {
         string brand;
